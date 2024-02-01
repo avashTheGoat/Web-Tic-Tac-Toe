@@ -49,6 +49,7 @@ addEventListener("mousedown", _event => {
 });
 
 resetButton.onclick = () => {
+    curPlayer = Player.X;
     gameState = GameState.ONGOING;
 
     for (let row = 0; row < 3; row++) {
